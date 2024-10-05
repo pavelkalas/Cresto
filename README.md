@@ -2,7 +2,7 @@
 Cresto is a lightweight PHP framework designed with simplicity in mind. With Cresto, you can easily create web pages by organizing your project into a straightforward folder structure.
 
 ## Features
-- **Simple Architecture**: Create folders for your pages in the `Sections` directory.
+- **Simple Architecture**: Create folders for your pages in the `views` directory.
 - **Easy Routing**: Access your pages using a clean URL format: `your-domain.com/?route=pagename`.
 - **Separation of Concerns**: Keep your header and body content separate for better maintainability.
 
@@ -27,7 +27,7 @@ To get started with Cresto, follow these steps:
 
 4. **Accessing Your Pages**:  
    To view your page, simply navigate to: ` your-domain.com/?route=pagename `
-and replace pagename with your page created in folder src -> sections -> yourpage
+and replace pagename with your page created in folder src -> views -> yourpage
 
 
 ### Sample `headers.php`
@@ -45,7 +45,7 @@ and replace pagename with your page created in folder src -> sections -> yourpag
 ```
 
 ### How to create page
-1. Go to the ` src/Sections ` and create folder named as your page, ex.: ` about-me ` so your folder will be ` src/Sections/about-me `
+1. Go to the ` src/views ` and create folder named as your page, ex.: ` about-me ` so your folder will be ` src/views/about-me `
 2. Then create ` index.php ` and ` headers.php ` in this folder.
 3. Add important imports to ` headers.php ` like CSS or JS imports, meta tags etc..
 4. Add your HTML code to ` index.php ` (without <body> tag, it's presented automatically by default Layout.php)
