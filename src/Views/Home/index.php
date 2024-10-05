@@ -11,11 +11,7 @@
         </p>
     </div>
 
-    <a class="button" href="https://github.com/pavelkalas/cresto.git" target="_blank">
+    <a class="button" style="margin-top: 20px;" href="https://github.com/pavelkalas/cresto.git" target="_blank">
         <img src="/src/Assets/images/icons/github.png" alt="GitHub icon">Cresto on GitHub
     </a>
-
-    <span style="color: yellow; font-style: italic; margin-top: 80px;">
-        Powered by <a href="https://github.com/pavelkalas/Cresto.git" target="_blank" style="color: whitesmoke; text-decoration: none; font-weight: bold;">Cresto</a> PHP framework.
-    </span>
 </div>
