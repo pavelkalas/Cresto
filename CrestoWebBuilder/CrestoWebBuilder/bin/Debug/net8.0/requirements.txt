@@ -1,0 +1,47 @@
+# CREATE FOLDERS
+makedir src
+makedir src/Assets
+makedir src/Assets/images
+makedir src/Assts/images/icons
+makedir src/Assets/css
+makedir src/Core
+makedir src/Functions
+makedir src/Models
+makedir src/Shared
+makedir src/Utils
+makedir src/Views
+makedir src/Views/404
+makedir src/Views/home
+
+# ASSETS
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/css/cresto.css; src/Assets; cresto.cs
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/icons/favicon.ico; src/Assets/images/icons; favicon.ico
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/icons/github.png; src/Assets/images/icons; github.png
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/logo.png; src/Assets/images; logo.png
+
+# CORE
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Cresto.php; src/Core; Cresto.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Imports.php; src/Core; Imports.php
+
+# CORE -> FUNCTIONS
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Functions/Integer.php; src/Core/Functions; Integer.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Functions/String.php; src/Core/Functions; String.php
+
+# SHARED
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Shared/Layout.php; src/Shared; Layout.php
+
+# UTILS
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Utils/Exception.php; src/Utils; Exception.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Utils/Redirector.php; src/Utils; Redirector.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Utils/Renderer.php; src/Utils; Renderer.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Utils/Router.php; src/Utils; Router.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Utils/Url.php; src/Utils; Url.php
+
+# VIEWS
+  # 404
+  download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/404/header.php; src/Utils; header.php
+  download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/404/index.php; src/Utils; index.php
+
+  # home
+  download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/Home/header.php; src/Utils; header.php
+  download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/Home/index.php; src/Utils; index.php

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrestoWebBuilder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8273fd75b975dda2bbdc405b4ecbe63311eeff1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4556de464eb13513c9c1403a66a851c5eefc9bbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrestoWebBuilder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrestoWebBuilder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

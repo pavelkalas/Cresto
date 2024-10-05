@@ -1,0 +1,15 @@
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\bin\Debug\net8.0\CrestoWebBuilder.exe
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\bin\Debug\net8.0\CrestoWebBuilder.deps.json
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\bin\Debug\net8.0\CrestoWebBuilder.runtimeconfig.json
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\bin\Debug\net8.0\CrestoWebBuilder.dll
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\bin\Debug\net8.0\CrestoWebBuilder.pdb
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.AssemblyInfoInputs.cache
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.AssemblyInfo.cs
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.csproj.CoreCompileInputs.cache
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.sourcelink.json
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.dll
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\refint\CrestoWebBuilder.dll
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.pdb
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\CrestoWebBuilder.genruntimeconfig.cache
+C:\Projects\Cresto\CrestoWebBuilder\CrestoWebBuilder\obj\Debug\net8.0\ref\CrestoWebBuilder.dll
