@@ -7,7 +7,7 @@ include_once "src/Core/Imports.php";
 
 $routePath = NULL;
 
-$sectionsPath = "src/Sections/";
+$sectionsPath = "src/Views/";
 
 if (isset($_GET["route"])) {
     $routePath = trim($_GET["route"]);
