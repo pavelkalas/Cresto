@@ -1,9 +1,5 @@
-<?php
-
-include_once "src/Core/Cresto.php";
-
-?>
-<!doctype html>
+<?php include_once "src/Core/Cresto.php"; ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +8,6 @@ include_once "src/Core/Cresto.php";
     <title>Cresto - Default page title</title>
 </head>
 <body>
-    <?php $state = renderBody();
-
-    if (!$state) {
-        redirectTo("/?route=404");
-    }
-
-    ?>
+<?php if (!renderBody()) redirectTo("/?route=404"); ?>
 </body>
 </html>
