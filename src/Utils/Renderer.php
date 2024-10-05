@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Importing all imports
+ */
 include_once "src/Core/Imports.php";
 
 $routePath = NULL;
@@ -12,6 +15,11 @@ if (isset($_GET["route"])) {
     $routePath = getDefaultRoutingPage();
 }
 
+/**
+ * Renders a Section Headers to BODY in Layout.php
+ *
+ * @return bool Returns if rendering was successfull or not.
+ */
 function renderHeaders()
 {
     global $routePath, $sectionsPath;
@@ -30,6 +38,11 @@ function renderHeaders()
     return FALSE;
 }
 
+/**
+ * Renders a Section content to BODY in Layout.php
+ *
+ * @return bool Returns if rendering was successfull or not.
+ */
 function renderBody()
 {
     global $routePath, $sectionsPath;
