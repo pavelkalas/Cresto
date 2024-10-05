@@ -1,5 +1,7 @@
 <?php
 
+include_once "Exception.php";
+
 $ALPHABET = "qwertzuiopasdfghjklyxcvbnm";
 
 function trimLeft(&$string, $character = ' ')
@@ -40,7 +42,7 @@ function toCharArray($string) {
         return str_split($string);
     }
 
-    return NULL;
+    return showError("ge");
 }
 
 function hasOnlyAlphabet($string)
