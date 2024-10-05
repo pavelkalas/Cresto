@@ -1,2 +1,5 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/Assets/css/cresto.css">
-<title>Sample page, Hello!</title>
+<title>Cresto - PHP Framework</title>
