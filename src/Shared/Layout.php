@@ -8,8 +8,8 @@ include_once "src/Core/Cresto.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
     <?php renderHeaders(); ?>
+    <title>Cresto - Default page title</title>
 </head>
 <body>
     <?php $state = renderBody();
