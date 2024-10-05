@@ -18,7 +18,7 @@ makedir src/Views/404
 makedir src/Views/Home
 
 # ASSETS
-download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/css/cresto.css; src/Assets; cresto.cs
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/css/cresto.css; src/Assets; cresto.css
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/icons/favicon.ico; src/Assets/images/icons; favicon.ico
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/icons/github.png; src/Assets/images/icons; github.png
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/images/logo.png; src/Assets/images; logo.png
