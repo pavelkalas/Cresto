@@ -3,7 +3,7 @@ makedir src
 
 makedir src/Assets
 makedir src/Assets/images
-makedir src/Assts/images/icons
+makedir src/Assets/images/icons
 makedir src/Assets/css
 
 makedir src/Core
