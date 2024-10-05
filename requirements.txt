@@ -1,14 +1,18 @@
 # CREATE FOLDERS
 makedir src
+
 makedir src/Assets
 makedir src/Assets/images
 makedir src/Assts/images/icons
 makedir src/Assets/css
+
 makedir src/Core
-makedir src/Functions
+makedir src/Core/Functions
+
 makedir src/Models
 makedir src/Shared
 makedir src/Utils
+
 makedir src/Views
 makedir src/Views/404
 makedir src/Views/home
