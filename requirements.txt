@@ -49,3 +49,5 @@ download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src
   # home
   download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/Home/headers.php; src/Views/Home; headers.php
   download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Views/Home/index.php; src/Views/Home; index.php
+
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/index.php; ./; index.php
