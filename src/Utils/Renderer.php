@@ -29,7 +29,9 @@ function renderHeaders()
 
         if (is_dir($sectionPath)) {
             if (file_exists($sectionPath . "headers.php")) {
+                echo "<!-- rendering headers to template. -->";
                 include $sectionPath . "headers.php";
+                echo "<!-- END -->";
                 return TRUE;
             }
         }
@@ -52,7 +54,9 @@ function renderBody()
 
         if (is_dir($sectionPath)) {
             if (file_exists($sectionPath . "index.php")) {
+                echo "<!-- rendering body content to template. -->";
                 include $sectionPath . "index.php";
+                echo "<!-- END -->";
                 return TRUE;
             }
         }
