@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrestoWebBuilder", "CrestoWebBuilder\CrestoWebBuilder.csproj", "{11D9E056-724F-481E-BC18-BE063DC59F96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D9E056-724F-481E-BC18-BE063DC59F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D9E056-724F-481E-BC18-BE063DC59F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D9E056-724F-481E-BC18-BE063DC59F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D9E056-724F-481E-BC18-BE063DC59F96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {069712FD-CC7E-441F-B134-6F4D62A03D18}
+	EndGlobalSection
+EndGlobal
