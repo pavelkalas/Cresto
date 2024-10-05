@@ -12,6 +12,9 @@ namespace CrestoWebBuilder
         public FileDownloader()
         {
             this.webClient = new();
+            webClient.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
+            webClient.Headers.Add("Pragma", "no-cache");
+            webClient.Headers.Add("Expires", "0");
         }
 
         /// <summary>
