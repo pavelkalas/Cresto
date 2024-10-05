@@ -15,7 +15,7 @@ makedir src/Utils
 
 makedir src/Views
 makedir src/Views/404
-makedir src/Views/home
+makedir src/Views/Home
 
 # ASSETS
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Assets/css/cresto.css; src/Assets; cresto.cs
