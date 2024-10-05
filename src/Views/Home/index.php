@@ -23,7 +23,7 @@ global $NAME;
 
     <br>
 
-    <form action="/?route=home" method="post">
+    <form action="<?php echo getViewUrl("home"); ?>" method="post">
         <label for="name">Enter your name:</label>
         <input type="text" name="name" id="name" placeholder="Enter your name.." <?php if ($NAME != NULL) { echo "value='" . $NAME . "'"; } ?> autofocus>
         <input type="submit" value="Send">
