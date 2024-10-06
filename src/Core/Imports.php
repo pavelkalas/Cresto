@@ -7,6 +7,7 @@ include_once "Utils/Exception.php";
 /* global datetype functions */
 include_once "src/Core/Functions/String.php";
 include_once "src/Core/Functions/Integer.php";
+include_once "src/Core/Functions/Array.php";
 
 
 include_once "Utils/Router.php";
