@@ -10,15 +10,5 @@ $DIGITS = "0123456789";
  */
 function hasOnlyNumeric($string)
 {
-    global $DIGITS;
-
-    $characters = str_split($string);
-
-    foreach ($characters as $character) {
-        if (!strpos($DIGITS, strtolower($character))) {
-            return FALSE;
-        }
-    }
-
-    return TRUE;
+    return is_numeric($string);
 }
