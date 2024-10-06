@@ -56,7 +56,7 @@ if (hasUrlPOST()) {
             <option value="multiplication">Multiplication (*)</option>
             <option value="division">Division (/)</option>
         </select>
-        <input type="submit" value="Sum">
+        <input type="submit" value="Get result!">
     </form>
 
     <p>
