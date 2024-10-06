@@ -35,7 +35,8 @@ function trimRight($string, $character = ' ')
  * @param $character Characters to TRIM.
  * @return string
  */
-function trimBoth($string, $character = ' ') {
+function trimBoth($string, $character = ' ')
+{
     return trim($string);
 }
 
@@ -79,7 +80,8 @@ function appendRight($string, $strToAppend, $spaceBetween = FALSE)
  * @param $string Provided string to be converted to char array.
  * @return array|null Returns a array of CHARACTERS if not EMPTY or NULL.
  */
-function toCharArray($string) {
+function toCharArray($string)
+{
     if ($string != NULL && strlen($string) > 0) {
         return str_split($string);
     }
@@ -116,7 +118,8 @@ function hasOnlyAlphabet($string)
  * @param $string String to be uppercased.
  * @return string Returns uppered text.
  */
-function toUpperCase($string) {
+function toUpperCase($string)
+{
     return strtoupper($string);
 }
 
@@ -126,17 +129,75 @@ function toUpperCase($string) {
  * @param $string String to be lowercased.
  * @return string Returns lowered text.
  */
-function toLowerCase($string) {
+function toLowerCase($string)
+{
     return strtolower($string);
 }
 
 /**
- * Converts first letter in text to uppercase
+ * Converts first letter in text to uppercase.
  *
  * @param $string String to be capialized.
  * @return string Returns capitalized text text.
  */
-function capitalize($string) {
+function capitalize($string)
+{
     $string[0] = strtoupper($string[0]);
     return $string;
+}
+
+/**
+ * Check if is the string EMPTY.
+ *
+ * @param $string String to be checked
+ * @return bool Returns TRUE if is string empty (ignoring spaces)
+ */
+function isEmpty($string)
+{
+    return strlen(trim($string)) == 0;
+}
+
+/**
+ * Check if is the string NULL.
+ *
+ * @param $string String to be checked
+ * @return bool Returns TRUE if is string NULL
+ */
+function isNull($string)
+{
+    return $string == NULL;
+}
+
+/**
+ * Check if is the string EMPTY or NULL.
+ *
+ * @param $string String to be checked
+ * @return bool Returns TRUE if is string empty or null (ignoring spaces)
+ */
+function isNullOrEmpty($string)
+{
+    return isEmpty($string) || isNull($string);
+}
+
+/**
+ * Converts array to STRING.
+ *
+ * @param $array Array to be converted to string.
+ * @param $entrySpaceBetween Delimiter to delim array entries.
+ * @param $trimOriginArrayValues Trim all values in array before join.
+ * @return string Returns joined array as string.
+ */
+function arrayToString($array, $entrySpaceBetween = '', $trimOriginArrayValues = FALSE)
+{
+    $words = "";
+
+    foreach ($array as $word) {
+        if ($trimOriginArrayValues) {
+            $words .= trim($word) . $entrySpaceBetween;
+        } else {
+            $words .= $word . $entrySpaceBetween;
+        }
+    }
+
+    return $words;
 }
