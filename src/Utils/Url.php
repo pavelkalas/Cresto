@@ -7,7 +7,7 @@
  *
  * @return mixed|null Returns GET parameter value if exists.
  */
-function urlGET($parameterName)
+function getUrlGET($parameterName)
 {
     $params = $_GET;
 
@@ -35,7 +35,7 @@ function hasUrlGET()
  *
  * @return mixed|null Returns POST parameter value if exists.
  */
-function urlPOST($parameterName)
+function getUrlPOST($parameterName)
 {
     $params = $_POST;
 
