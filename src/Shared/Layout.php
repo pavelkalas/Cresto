@@ -1,4 +1,4 @@
-<?php include_once "src/Core/Cresto.php"; ?>
+<?php include_once "src/Core/Cresto.php"; $start = microtime(true); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,3 +12,4 @@
 <?php if (!renderBody()) redirectTo("/?route=404"); ?>
 </body>
 </html>
+<?php echo "<!-- Page successfully rendered in: " . (number_format(((microtime(true) - $start) * 1000), 2)) . " ms -->"; ?>
