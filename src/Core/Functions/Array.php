@@ -56,3 +56,17 @@ function getArrayMinimum($array)
 
     return $number;
 }
+
+/**
+ * Merge multiple arrays together.
+ *
+ * @param array ...$arrays Arrays to be merged
+ * @return array|null New merged array if not NULL arrays provided.
+ */
+function mergeArrays(...$arrays) {
+    if (empty($arrays)) {
+        return NULL;
+    }
+
+    return array_merge(...$arrays);
+}
