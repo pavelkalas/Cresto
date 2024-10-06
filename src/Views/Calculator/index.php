@@ -28,7 +28,7 @@ if (hasUrlPOST()) {
                 break;
 
             case "division":
-                $result = $firstNumber / $secondNumber;
+                $result = ($firstNumber != 0 && $secondNumber == 0) ? ($firstNumber / $secondNumber) : "Cannot divide by zero.";
                 break;
         }
 
