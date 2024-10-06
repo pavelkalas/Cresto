@@ -7,70 +7,69 @@ $ALPHABET = "qwertzuiopasdfghjklyxcvbnm";
 /**
  * Removes specified symbols at LEFT side of the provided STRING.
  *
- * @param $string Trims a string (by refference)
+ * @param $string Trims a string.
  * @param $character Characters to TRIM.
- * @return void
+ * @return string
  */
-function trimLeft(&$string, $character = ' ')
+function trimLeft($string, $character = ' ')
 {
-    $string = ltrim($string, $character);
+    return ltrim($string, $character);
 }
 
 /**
  * Removes specified symbols at RIGHT side of the provided STRING.
  *
- * @param $string Trims a string (by refference)
+ * @param $string Trims a string.
  * @param $character Characters to TRIM.
- * @return void
+ * @return string
  */
-function trimRight(&$string, $character = ' ')
+function trimRight($string, $character = ' ')
 {
-    $string = rtrim($string, $character);
+    return rtrim($string, $character);
 }
 
 /**
  * Removes specified symbols at LEFT & RIGHT side of the provided STRING.
  *
- * @param $string Trims a string (by refference)
+ * @param $string Trims a string
  * @param $character Characters to TRIM.
- * @return void
+ * @return string
  */
-function trimBoth(&$string, $character = ' ') {
-    $string = rtrim($string, $character);
-    $string = ltrim($string, $character);
+function trimBoth($string, $character = ' ') {
+    return trim($string);
 }
 
 /**
- * Append ANOTHER STRING to STRING to LEFT side (by refference)
+ * Append ANOTHER STRING to STRING to LEFT side.
  *
  * @param $string Default string.
  * @param $strToAppend New string to appendion.
  * @param $spaceBetween Makes (one, single) space between DEFAULT STRING and STRING TO APPEND.
- * @return void
+ * @return string
  */
-function appendLeft(&$string, $strToAppend, $spaceBetween = FALSE)
+function appendLeft($string, $strToAppend, $spaceBetween = FALSE)
 {
     if ($spaceBetween) {
-        $string = $strToAppend . " " . $string;
+        return $strToAppend . " " . $string;
     } else {
-        $string = $strToAppend . $string;
+        return $strToAppend . $string;
     }
 }
 
 /**
- * Append ANOTHER STRING to STRING to RIGHT side (by refference)
+ * Append ANOTHER STRING to STRING to RIGHT side.
  *
  * @param $string Default string.
  * @param $strToAppend New string to appendion.
  * @param $spaceBetween Makes (one, single) space between DEFAULT STRING and STRING TO APPEND.
- * @return void
+ * @return string
  */
-function appendRight(&$string, $strToAppend, $spaceBetween = FALSE)
+function appendRight($string, $strToAppend, $spaceBetween = FALSE)
 {
     if ($spaceBetween) {
-        $string = $string . " " . $strToAppend;
+        return $string . " " . $strToAppend;
     } else {
-        $string = $string . $strToAppend;
+        return $string . $strToAppend;
     }
 }
 
@@ -78,7 +77,7 @@ function appendRight(&$string, $strToAppend, $spaceBetween = FALSE)
  * Converts string to an ARRAY of CHARACTERS.
  *
  * @param $string Provided string to be converted to char array.
- * @return array|false|string Returns a array of CHARACTERS if not EMPTY or NULL.
+ * @return array|null Returns a array of CHARACTERS if not EMPTY or NULL.
  */
 function toCharArray($string) {
     if ($string != NULL && strlen($string) > 0) {
@@ -109,4 +108,35 @@ function hasOnlyAlphabet($string)
     }
 
     return TRUE;
+}
+
+/**
+ * Converts text to uppercase
+ *
+ * @param $string String to be uppercased.
+ * @return string Returns uppered text.
+ */
+function toUpperCase($string) {
+    return strtoupper($string);
+}
+
+/**
+ * Converts text to lowercase.
+ *
+ * @param $string String to be lowercased.
+ * @return string Returns lowered text.
+ */
+function toLowerCase($string) {
+    return strtolower($string);
+}
+
+/**
+ * Converts first letter in text to uppercase
+ *
+ * @param $string String to be capialized.
+ * @return string Returns capitalized text text.
+ */
+function capitalize($string) {
+    $string[0] = strtoupper($string[0]);
+    return $string;
 }
