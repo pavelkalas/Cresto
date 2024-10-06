@@ -30,6 +30,7 @@ download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src
 # CORE -> FUNCTIONS
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Functions/Integer.php; src/Core/Functions; Integer.php
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Functions/String.php; src/Core/Functions; String.php
+download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Core/Functions/Array.php; src/Core/Functions; Array.php
 
 # SHARED
 download https://raw.githubusercontent.com/pavelkalas/Cresto/refs/heads/main/src/Shared/Layout.php; src/Shared; Layout.php
