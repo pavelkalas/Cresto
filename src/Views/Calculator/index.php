@@ -10,8 +10,10 @@ if (hasUrlPOST()) {
     $firstNumber = getUrlPOST("first-number");
     $secondNumber = getUrlPOST("second-number");
     $operation = getUrlPOST("operation");
+    
+    $numbers = $firstNumber . $secondNumber;
 
-    if (hasOnlyNumeric($firstNumber) && hasOnlyNumeric($secondNumber)) {
+    if (hasOnlyNumeric($numbers)) {
         $result = ($firstNumber + $secondNumber);
 
         switch ($operation) {
