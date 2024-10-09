@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/src/Assets/images/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<?php if (!renderBody()) redirectTo("/?route=404"); ?>
+<?php if (!renderBody()) redirectTo("/404"); ?>
 </body>
 </html>
 <?php echo "<!-- Page successfully rendered in: " . (number_format(((microtime(true) - $start) * 1000), 2)) . " ms -->"; ?>
