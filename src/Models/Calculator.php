@@ -5,11 +5,11 @@ $secondNumber = 0;
 
 $result = 0;
 
-if (hasUrlPOST()) {
+if (hasAnyPOST()) {
 
-    $firstNumber = getUrlPOST("first-number");
-    $secondNumber = getUrlPOST("second-number");
-    $operation = getUrlPOST("operation");
+    $firstNumber = getPOST("first-number");
+    $secondNumber = getPOST("second-number");
+    $operation = getPOST("operation");
 
     $numbers = $firstNumber . $secondNumber;
 
