@@ -18,5 +18,5 @@ function redirectTo($url) {
  * @return string Returns view URL.
  */
 function getViewUrl($viewName) {
-    return "/?route=$viewName";
+    return "/$viewName";
 }
