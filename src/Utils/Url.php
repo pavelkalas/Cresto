@@ -1,19 +1,17 @@
 <?php
 
 /**
- * GET parameter value by name.
- *
- * @param parameterName Parameter name.
- *
- * @return mixed|null Returns GET parameter value if exists.
+ * @param $parameterName GET parameter name
+ * @param $removeValueWhitespaces Ignores parameter value spaces
+ * @return mixed|string|null Returns VALUE of POST parameter if is not NULL
  */
-function getUrlGET($parameterName)
+function getPOST($parameterName, $removeValueWhitespaces = FALSE)
 {
-    $params = $_GET;
-
-    if (isset($_GET)) {
-        if (isset($params[$parameterName])) {
-            return $params[$parameterName];
+    if (isset($_POST[$parameterName])) {
+        if ($removeValueWhitespaces) {
+            return trim($_POST[$parameterName]);
+        } else {
+            return $_POST[$parameterName];
         }
     }
 
@@ -21,27 +19,17 @@ function getUrlGET($parameterName)
 }
 
 /**
- * @return bool Returns TRUE if has request any GET parameters.
+ * @param $parameterName GET parameter name
+ * @param $removeValueWhitespaces Ignores parameter value spaces
+ * @return mixed|string|null Returns VALUE of GET parameter if is not NULL
  */
-function hasUrlGET()
+function getGET($parameterName, $removeValueWhitespaces = FALSE)
 {
-    return $_GET != NULL;
-}
-
-/**
- * POST parameter value by name.
- *
- * @param parameterName Parameter name.
- *
- * @return mixed|null Returns POST parameter value if exists.
- */
-function getUrlPOST($parameterName)
-{
-    $params = $_POST;
-
-    if (isset($_POST)) {
-        if (isset($params[$parameterName])) {
-            return $params[$parameterName];
+    if (isset($_GET[$parameterName])) {
+        if ($removeValueWhitespaces) {
+            return trim($_GET[$parameterName]);
+        } else {
+            return $_GET[$parameterName];
         }
     }
 
@@ -49,35 +37,19 @@ function getUrlPOST($parameterName)
 }
 
 /**
- * @return bool Returns TRUE if has request any POST parameters.
+ * Checks if requests got any POST data.
+ *
+ * @return bool Returns TRUE if request has some POST data.
  */
-function hasUrlPOST()
-{
-    return $_POST != NULL;
+function hasAnyPOST() {
+    return count($_POST) > 0;
 }
 
 /**
- * Checks for existing POST parameter.
+ * Checks if is some GET parameters sent in request.
  *
- * @param parameterName Parameter name.
- * @param bool $ignoreEmpty Ignores empty values.
- *
- * @return bool Returns TRUE if is POST parameter set.
+ * @return bool Returns TRUE if URL has some GET data.
  */
-function hasUrlSetPOST($parameterName, $ignoreEmpty = FALSE)
-{
-    return hasUrlPOST() && isset($_POST[$parameterName]) && !(trim($_POST[$parameterName]) == "" && $ignoreEmpty);
-}
-
-/**
- * Checks for existing GET parameter.
- *
- * @param parameterName Parameter name.
- * @param bool $ignoreEmpty Ignores empty values.
- *
- * @return bool Returns TRUE if is GET parameter set.
- */
-function hasUrlSetGET($parameterName, $ignoreEmpty)
-{
-    return hasUrlGET() && isset($_GET[$parameterName]) && !(trim($_POST[$parameterName]) == "" && $ignoreEmpty);
+function hasAnyGET() {
+    return count($_GET) > 0;
 }
